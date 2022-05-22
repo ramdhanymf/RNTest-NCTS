@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-RNTestNCTS-RNTestNCTSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNTestNCTS-RNTestNCTSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		848A51C8283A46F3000D28E3 /* RCTHelloWorldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A51C7283A46F3000D28E3 /* RCTHelloWorldModule.m */; };
+		848A51C9283A46F3000D28E3 /* RCTHelloWorldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A51C7283A46F3000D28E3 /* RCTHelloWorldModule.m */; };
+		848A51CA283A4B56000D28E3 /* HelloWorldLib2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845A6188283A45B80058BA87 /* HelloWorldLib2.framework */; };
+		848A51CB283A4B56000D28E3 /* HelloWorldLib2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 845A6188283A45B80058BA87 /* HelloWorldLib2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = RNTestNCTS;
 		};
+		845A6187283A45B80058BA87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845A6183283A45B80058BA87 /* HelloWorldLib2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 847018A62839FD4F00F7773B;
+			remoteInfo = HelloWorldLib2;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		848A51CC283A4B56000D28E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				848A51CB283A4B56000D28E3 /* HelloWorldLib2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* RNTestNCTSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNTestNCTSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +67,9 @@
 		5B7EB9410499542E8C5724F5 /* Pods-RNTestNCTS-RNTestNCTSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTestNCTS-RNTestNCTSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNTestNCTS-RNTestNCTSTests/Pods-RNTestNCTS-RNTestNCTSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNTestNCTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTestNCTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNTestNCTS/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845A6183283A45B80058BA87 /* HelloWorldLib2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloWorldLib2.xcodeproj; path = ../../HelloWorldLib2/HelloWorldLib2.xcodeproj; sourceTree = "<group>"; };
+		845A618B283A46330058BA87 /* RCTHelloWorldModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTHelloWorldModule.h; sourceTree = "<group>"; };
+		848A51C7283A46F3000D28E3 /* RCTHelloWorldModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTHelloWorldModule.m; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNTestNCTS-RNTestNCTSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTestNCTS-RNTestNCTSTests.release.xcconfig"; path = "Target Support Files/Pods-RNTestNCTS-RNTestNCTSTests/Pods-RNTestNCTS-RNTestNCTSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -60,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-RNTestNCTS.a in Frameworks */,
+				848A51CA283A4B56000D28E3 /* HelloWorldLib2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +115,7 @@
 		13B07FAE1A68108700A75B9A /* RNTestNCTS */ = {
 			isa = PBXGroup;
 			children = (
+				845A618A283A46160058BA87 /* HelloWorldFramework */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -99,6 +129,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				845A6183283A45B80058BA87 /* HelloWorldLib2.xcodeproj */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNTestNCTS.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNTestNCTS-RNTestNCTSTests.a */,
@@ -135,6 +166,23 @@
 				00E356EE1AD99517003FC87E /* RNTestNCTSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		845A6184283A45B80058BA87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845A6188283A45B80058BA87 /* HelloWorldLib2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845A618A283A46160058BA87 /* HelloWorldFramework */ = {
+			isa = PBXGroup;
+			children = (
+				845A618B283A46330058BA87 /* RCTHelloWorldModule.h */,
+				848A51C7283A46F3000D28E3 /* RCTHelloWorldModule.m */,
+			);
+			name = HelloWorldFramework;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -184,6 +232,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				848A51CC283A4B56000D28E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +271,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 845A6184283A45B80058BA87 /* Products */;
+					ProjectRef = 845A6183283A45B80058BA87 /* HelloWorldLib2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNTestNCTS */,
@@ -229,6 +284,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		845A6188283A45B80058BA87 /* HelloWorldLib2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HelloWorldLib2.framework;
+			remoteRef = 845A6187283A45B80058BA87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -403,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* RNTestNCTSTests.m in Sources */,
+				848A51C9283A46F3000D28E3 /* RCTHelloWorldModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				848A51C8283A46F3000D28E3 /* RCTHelloWorldModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
