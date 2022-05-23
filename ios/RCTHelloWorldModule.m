@@ -13,9 +13,9 @@
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(print:(NSString *)word){
-  WorldMeOriginal *printingOriginal = [[WorldMeOriginal alloc]init];
+  WorldMe *printingOriginal = [[WorldMe alloc]init];
   
-  [WorldMeOriginal print:word];
+  [WorldMe print:word];
   [printingOriginal printInstanceMethod:word];
 }
 
