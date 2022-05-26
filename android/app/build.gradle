@@ -267,6 +267,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation files('/Users/admin/Documents/Practice/HelloWorldAAR/HelloWorldAAR/build/outputs/aar/HelloWorldAAR-release.aar')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
