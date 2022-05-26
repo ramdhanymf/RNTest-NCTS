@@ -10,7 +10,7 @@
 
 import React from 'react';
 import {SafeAreaView, StyleSheet, useColorScheme, Button} from 'react-native';
-import * as HelloWorldFramework from './src/native-modules/ios/HelloWorldFramework';
+import * as HelloWorldFramework from './src/native-modules/HelloWorldFramework';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
